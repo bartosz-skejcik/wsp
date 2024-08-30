@@ -6,7 +6,7 @@ export function addEvent(oAuth2Client: OAuth2Client, workShift: WorkShift) {
   const calendar = google.calendar({ version: "v3", auth: oAuth2Client });
 
   const event = {
-    summary: `${workShift.status} | ${workShift.duration}`,
+    summary: `CCC | ${workShift.duration}`,
     location: workShift.location,
     description: `Work shift: ${workShift.duration}`,
     start: {
